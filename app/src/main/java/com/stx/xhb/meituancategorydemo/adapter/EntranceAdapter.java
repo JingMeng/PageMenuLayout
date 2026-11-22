@@ -1,8 +1,8 @@
-package com.stx.xhb.meituancategorydemo.adapter;
+﻿package com.stx.xhb.meituancategorydemo.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,20 +22,18 @@ import java.util.List;
  *
  * @mail:xhb_199409@163.com
  * @github:https://github.com/xiaohaibin
- * @describe: 首页分页菜单项列表适配器
- */
+ * @describe: 棣栭〉鍒嗛〉鑿滃崟椤瑰垪琛ㄩ€傞厤鍣? */
 public class EntranceAdapter extends RecyclerView.Adapter<EntranceAdapter.EntranceViewHolder> {
 
     private List<ModelHomeEntrance> mDatas;
 
     /**
-     * 页数下标,从0开始(通俗讲第几页)
+     * 椤垫暟涓嬫爣,浠?寮€濮?閫氫織璁茬鍑犻〉)
      */
     private int mIndex;
 
     /**
-     * 每页显示最大条目个数
-     */
+     * 姣忛〉鏄剧ず鏈€澶ф潯鐩釜鏁?     */
     private int mPageSize;
 
     private Context mContext;
@@ -62,8 +60,7 @@ public class EntranceAdapter extends RecyclerView.Adapter<EntranceAdapter.Entran
     @Override
     public void onBindViewHolder(@NonNull EntranceViewHolder holder, final int position) {
         /**
-         * 在给View绑定显示的数据时，计算正确的position = position + mIndex * mPageSize，
-         */
+         * 鍦ㄧ粰View缁戝畾鏄剧ず鐨勬暟鎹椂锛岃绠楁纭殑position = position + mIndex * mPageSize锛?         */
         final int pos = position + mIndex * mPageSize;
         holder.entranceNameTextView.setText(homeEntrances.get(pos).getName());
         holder.entranceIconImageView.setImageResource(homeEntrances.get(pos).getImage());
@@ -100,3 +97,4 @@ public class EntranceAdapter extends RecyclerView.Adapter<EntranceAdapter.Entran
         }
     }
 }
+

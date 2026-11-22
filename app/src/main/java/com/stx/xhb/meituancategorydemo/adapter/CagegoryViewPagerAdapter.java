@@ -1,7 +1,7 @@
-package com.stx.xhb.meituancategorydemo.adapter;
+﻿package com.stx.xhb.meituancategorydemo.adapter;
 
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -11,10 +11,9 @@ import java.util.List;
  * Created by jxnk25 on 2016/9/21.
  *
  * @link https://xiaohaibin.github.io/
- * @email： xhb_199409@163.com
+ * @email锛?xhb_199409@163.com
  * @github: https://github.com/xiaohaibin
- * @description：  首页分类ViewPager适配器
- */
+ * @description锛? 棣栭〉鍒嗙被ViewPager閫傞厤鍣? */
 public class CagegoryViewPagerAdapter extends PagerAdapter {
 
     private List<View> mViewList;
@@ -47,3 +46,4 @@ public class CagegoryViewPagerAdapter extends PagerAdapter {
         return view == object;
     }
 }
+

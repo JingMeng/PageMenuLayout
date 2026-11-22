@@ -1,4 +1,4 @@
-package com.stx.xhb.meituancategorydemo.widget;
+﻿package com.stx.xhb.meituancategorydemo.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -20,8 +20,7 @@ import com.stx.xhb.meituancategorydemo.utils.ScreenUtil;
  * Author: Mr.xiao on 2017/5/23
  * @mail:xhb_199409@163.com
  * @github:https://github.com/xiaohaibin
- * @describe: 指示器
- */
+ * @describe: 鎸囩ず鍣? */
 public class IndicatorView extends View {
 
     private int indicatorColor;
@@ -117,3 +116,4 @@ public class IndicatorView extends View {
     }
 
 }
+

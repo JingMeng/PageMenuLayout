@@ -1,10 +1,10 @@
-package com.stx.xhb.meituancategorydemo;
+﻿package com.stx.xhb.meituancategorydemo;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -49,22 +49,22 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         homeEntrances = new ArrayList<>();
-        homeEntrances.add(new ModelHomeEntrance("美食", R.mipmap.ic_category_0));
-        homeEntrances.add(new ModelHomeEntrance("电影", R.mipmap.ic_category_1));
-        homeEntrances.add(new ModelHomeEntrance("酒店住宿", R.mipmap.ic_category_2));
-        homeEntrances.add(new ModelHomeEntrance("生活服务", R.mipmap.ic_category_3));
+        homeEntrances.add(new ModelHomeEntrance("缇庨", R.mipmap.ic_category_0));
+        homeEntrances.add(new ModelHomeEntrance("鐢靛奖", R.mipmap.ic_category_1));
+        homeEntrances.add(new ModelHomeEntrance("閰掑簵浣忓", R.mipmap.ic_category_2));
+        homeEntrances.add(new ModelHomeEntrance("鐢熸椿鏈嶅姟", R.mipmap.ic_category_3));
         homeEntrances.add(new ModelHomeEntrance("KTV", R.mipmap.ic_category_4));
-        homeEntrances.add(new ModelHomeEntrance("旅游", R.mipmap.ic_category_5));
-        homeEntrances.add(new ModelHomeEntrance("学习培训", R.mipmap.ic_category_6));
-        homeEntrances.add(new ModelHomeEntrance("汽车服务", R.mipmap.ic_category_7));
-        homeEntrances.add(new ModelHomeEntrance("摄影写真", R.mipmap.ic_category_8));
-        homeEntrances.add(new ModelHomeEntrance("休闲娱乐", R.mipmap.ic_category_10));
-        homeEntrances.add(new ModelHomeEntrance("丽人", R.mipmap.ic_category_11));
-        homeEntrances.add(new ModelHomeEntrance("运动健身", R.mipmap.ic_category_12));
-        homeEntrances.add(new ModelHomeEntrance("大保健", R.mipmap.ic_category_13));
-        homeEntrances.add(new ModelHomeEntrance("团购", R.mipmap.ic_category_14));
-        homeEntrances.add(new ModelHomeEntrance("景点", R.mipmap.ic_category_16));
-        homeEntrances.add(new ModelHomeEntrance("全部分类", R.mipmap.ic_category_15));
+        homeEntrances.add(new ModelHomeEntrance("鏃呮父", R.mipmap.ic_category_5));
+        homeEntrances.add(new ModelHomeEntrance("瀛︿範鍩硅", R.mipmap.ic_category_6));
+        homeEntrances.add(new ModelHomeEntrance("姹借溅鏈嶅姟", R.mipmap.ic_category_7));
+        homeEntrances.add(new ModelHomeEntrance("鎽勫奖鍐欑湡", R.mipmap.ic_category_8));
+        homeEntrances.add(new ModelHomeEntrance("浼戦棽濞变箰", R.mipmap.ic_category_10));
+        homeEntrances.add(new ModelHomeEntrance("涓戒汉", R.mipmap.ic_category_11));
+        homeEntrances.add(new ModelHomeEntrance("杩愬姩鍋ヨ韩", R.mipmap.ic_category_12));
+        homeEntrances.add(new ModelHomeEntrance("澶т繚鍋?, R.mipmap.ic_category_13));
+        homeEntrances.add(new ModelHomeEntrance("鍥㈣喘", R.mipmap.ic_category_14));
+        homeEntrances.add(new ModelHomeEntrance("鏅偣", R.mipmap.ic_category_16));
+        homeEntrances.add(new ModelHomeEntrance("鍏ㄩ儴鍒嗙被", R.mipmap.ic_category_15));
     }
 
     private void init() {
@@ -111,3 +111,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+

@@ -1,21 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    namespace 'com.stx.xhb.meituancategarydemo'
+    compileSdk 34
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.stx.xhb.meituancategarydemo"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
@@ -26,3 +28,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation project(':pagemenulibrary')
 }
+
+
+
+
